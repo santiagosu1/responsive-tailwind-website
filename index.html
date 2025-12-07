@@ -11,10 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
 </head>
-<body class="font-[Poppins]  font-light text-[var(--text)] flex-col">
-
+<body class="font-[Poppins]  font-light text-[var(--text)]">
     <!-- santiago suarez part -->
-    <div class="min-h-[900px]">
+    <div class="min-h-[1800px] relative">
         <div class="absolute">
             <div>
                 <header>
@@ -56,12 +55,12 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col p-4">
+            <div class="flex flex-col p-4 gap-4">
                 <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[96%] min-h-[370px] justify-center">
-                    <div class="flex flex-col items-center">
+                    <div class="flex flex-col items-center relative">
                         <img src="./assets/gallery-image-1.png" alt="gallery image 1" class="max-w-[95%] max-h-[95%] rounded-2xl">
-                        <img src="./assets/gallery-icon-1.png" alt="book gallery icon" class="max-w-[32px] max-h-auto absolute bottom-[35%] left-[67%]">
-                        <img src="./assets/gallery-icon-2.png" alt="android gallery icon" class="max-w-[32px] max-h-auto absolute rounded-lg bottom-[35%] left-[78%]">
+                        <img src="./assets/gallery-icon-1.png" alt="book gallery icon" class="max-w-[32px] max-h-auto absolute bottom-[85%] left-[73%]">
+                        <img src="./assets/gallery-icon-2.png" alt="android gallery icon" class="max-w-[32px] max-h-auto absolute rounded-lg bottom-[85%] left-[85%]">
                     </div>
                     <div class="flex px-4 gap-40">
                         <div>
@@ -72,16 +71,53 @@
                             <span class="text-white text-sm">+99</span>
                         </div>
                     </div>
-                </section>            
+                </section>
+                <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[96%] min-h-[370px] justify-center">
+                    <div class="flex flex-col items-center relative">
+                        <img src="./assets/gallery-image-3.png" alt="gallery image 1" class="max-w-[95%] min-h-[263px] rounded-2xl">
+                        <img src="./assets/gallery-icon-3.png" alt="book gallery icon" class="max-w-[32px] min-h-auto absolute bottom-[85%] left-[73%]">
+                        <img src="./assets/gallery-icon-4.png" alt="android gallery icon" class="max-w-[32px] max-h-auto absolute rounded-lg bottom-[85%] left-[85%]">
+                    </div>
+                    <div class="flex px-4 gap-23">
+                        <div>
+                            <h2 class="font-medium text-lg">Bookies</h2>
+                            <p class="font-normal text-sm min-w-[180px]">Read digital book app</p>
+                        </div>
+                        <div class="bg-black min-w-[38px] max-h-[38px] rounded-3xl flex justify-center items-center p-1 font-normal">
+                            <span class="text-white text-sm">+99</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[96%] min-h-[370px] justify-center">
+                    <div class="flex flex-col items-center relative">
+                        <img src="./assets/gallery-image-4.png" alt="gallery image 1" class="max-w-[95%] min-h-[263px] rounded-2xl">
+                        <img src="./assets/gallery-icon-3.png" alt="book gallery icon" class="max-w-[32px] max-h-auto absolute bottom-[85%] left-[73%]">
+                        <img src="./assets/gallery-icon-2.png" alt="android gallery icon" class="max-w-[32px] max-h-auto absolute rounded-lg bottom-[85%] left-[85%]">
+                    </div>
+                    <div class="flex px-4 gap-23">
+                        <div>
+                            <h2 class="font-medium text-lg">Gojek</h2>
+                            <p class="font-normal text-sm min-w-[180px]">Home screen gojek apps</p>
+                        </div>
+                        <div class="bg-black min-w-[38px] max-h-[38px] rounded-3xl flex justify-center items-center p-1 font-normal">
+                            <span class="text-white text-sm">+99</span>
+                        </div>
+                    </div>
+                </section>
+                <div class="flex items-center justify-center">
+                    <button class="min-w-[140px] min-h-[40px] border-2 border-[var(--brand)] rounded-3xl p-2">Load more</button>  
+                </div>
+                                            
             </div>
+
         </div>
         <div class="overflow-hidden">
             <img src="./assets/circle-bg-type-2.png" alt="bg-circles" class="relative bottom-[60%] left-[30%] min-w-[547px] min-h-auto">
         </div>
     </div>
-
+    
     <!-- santiago minotta part -->
-    <section class="py-9 px-4 flex flex-col gap-24" >
+    <section class="py-9 px-4 flex flex-col gap-24">
         <div>
             <div class="flex justify-between items-center mb-8">
                 <h2 class="text-3xl">It's me<br>Arif Iskandar</h2>
