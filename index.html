@@ -18,7 +18,7 @@
         <div class="absolute">
             <div>
                 <header>
-                    <nav class="flex justify-between p-4">
+                    <nav class="flex justify-between p-4 min-w-[390px]">
                         <div class="flex items-center gap-2">
                             <img src="./assets/Frame 8.png" alt="profile image" class="w-8">
                             <p class="font-semibold">It's me</p>
@@ -33,8 +33,8 @@
                         </div>
                     </nav>
                 </header>
-                <div class="flex-col">
-                    <section class="flex p-4 max-h-[200px]">
+                <div class="flex-col min-h-[450px]">
+                    <section class="flex p-5 max-h-[200px]">
                         <div>
                             <h1 class="font-light text-[33.6px] max-w-[200px]">Let's learn to code</h1>
                             <h1 class="font-light text-[33.6px]">an application</h1>
@@ -42,12 +42,12 @@
                             <img src="./assets/book-open-light-icon.png" alt="Book open icon" class="max-w-[36px] max-h-[36px] relative bottom-[75%] left-[55%] ">
                         </div>
                     </section>
-                    <section class="flex-col p-4">
+                    <section class="flex-col p-5">
                         <p class="max-w-[350px]">with me <span class="text-[var(--brand)]">arif iskandar</span>, a software</p>
                         <p class="max-w-[350px]">developer who loves to share how to code in many programing
                         languages and multi platforms.</p>
                     </section>
-                    <div class="flex p-4 items-center gap-4 ">
+                    <div class="flex p-5 items-center gap-4 ">
                         <button class="bg-[var(--brand)] text-white rounded-3xl min-w-[121px] min-h-[38px]">Start learn</button>
                         <img src="./assets/github-icon.png" alt="github icon" class="max-w-[24px] max-h-[24px]">
                         <img src="./assets/instagram-icon.png" alt="Instagram icon"class="max-w-[24px] max-h-[24px]">
@@ -56,24 +56,28 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <section>
-                    <div>
-                        <img src="./assets/gallery-image-1.png" alt="gallery image 1" class="max-w-[319px] max-h-[245px]">
-                        <img src="./assets/gallery-icon-1.png" alt="book gallery icon" class="max-w-[32px] max-h-auto">
-                        <img src="./assets/gallery-icon-3.png" alt="android gallery icon" class="max-w-[32px] max-h-auto">
+            <div class="flex flex-col p-4">
+                <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[96%] min-h-[370px] justify-center">
+                    <div class="flex flex-col items-center">
+                        <img src="./assets/gallery-image-1.png" alt="gallery image 1" class="max-w-[95%] max-h-[95%] rounded-2xl">
+                        <img src="./assets/gallery-icon-1.png" alt="book gallery icon" class="max-w-[32px] max-h-auto absolute bottom-[35%] left-[67%]">
+                        <img src="./assets/gallery-icon-2.png" alt="android gallery icon" class="max-w-[32px] max-h-auto absolute rounded-lg bottom-[35%] left-[78%]">
                     </div>
-                    <div>
-                        <h2>BWalet</h2>
-                        <p>Business wallet</p>
-                        <div class="bg-black max-w-[36px] min-h-[36px] rounded-xl flex items-center p-1">
-                            <span class="text-white text-xs">+99</span>
+                    <div class="flex px-4 gap-40">
+                        <div>
+                            <h2 class="font-medium text-lg">BWalet</h2>
+                            <p class="font-normal text-sm min-w-[110px]">Business wallet</p>
+                        </div>
+                        <div class="bg-black min-w-[38px] max-h-[38px] rounded-3xl flex justify-center items-center p-1 font-normal">
+                            <span class="text-white text-sm">+99</span>
                         </div>
                     </div>
                 </section>            
             </div>
         </div>
-        <img src="./assets/circle-bg-type-2.png" alt="bg-circles" class="relative bottom-[60%] left-[30%] min-w-[547px] min-h-auto">
+        <div class="overflow-hidden">
+            <img src="./assets/circle-bg-type-2.png" alt="bg-circles" class="relative bottom-[60%] left-[30%] min-w-[547px] min-h-auto">
+        </div>
     </div>
 
     <!-- santiago minotta part -->
