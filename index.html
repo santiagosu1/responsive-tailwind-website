@@ -54,7 +54,7 @@
                     </nav>
                 </header>
                 <main>
-                    <div class="flex-col min-h-[450px] p-5 md:px-15 relative lg:flex lg:items-center lg:justify-between lg:flex-row">
+                    <div class="flex-col min-h-[450px] p-5 md:px-15 relative lg:flex lg:items-center lg:justify-between lg:flex-row lg:items-end">
                         <section class="flex max-h-[200px] md:max-h-[360px]">
                             <div>
                                 <h1 class="font-light text-[33.6px] max-w-[200px] md:text-[72px] md:max-w-[400px]">Let's learn to code</h1>
@@ -64,7 +64,7 @@
                             </div>
                         </section>
 
-                        <section class="flex-col mr-10">
+                        <section class="flex-col mr-10 lg:mb-19">
                             <p class="max-w-[350px] md:hidden">with me <span class="text-[var(--brand)]">arif iskandar</span>, a software</p>
                             <p class="max-w-[350px] md:hidden">developer who loves to share how to code in many programing
                             languages and multi platforms.</p>
@@ -82,12 +82,13 @@
                             </div>
                         </section>
                     </div>
-                    <div class="flex flex-col items-center gap-6 p-4 w-full md:mt-[100px] md:grid md:grid-cols-2 md:items-center">
+                    <!-- Gallery -->
+                    <div class="flex flex-col items-center gap-6 p-4 w-full md:mt-[100px] md:grid md:grid-cols-2 md:items-center lg:grid lg:grid-cols-3 lg:mt-[0px]">
 
                         <!-- Gallery container 1 mobile-->
-                        <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[95%] py-4 md:max-w-[100%] md:order-3 order-1 md:min-h[427px] md:min-h-[390px]">
+                        <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[95%] py-4 md:max-w-[100%] md:order-3 order-1 md:min-h[427px] md:min-h-[390px] lg:order-5 lg:max-w-[100%]">
                             <div class="relative w-full flex justify-center items-center">
-                                <img src="./assets/gallery-image-1.png" alt="gallery image 1" class="rounded-2xl w-full max-w-[90%] h-auto md:max-h-[80%] md:max-w-[90%]">
+                                <img src="./assets/gallery-image-1.png" alt="gallery image 1" class="rounded-2xl w-full max-w-[90%] h-auto md:max-h-[80%] md:max-w-[90%] min-h-[311px]">
                                 <img src="./assets/gallery-icon-1.png" alt="book gallery icon" class="absolute top-5 left-[70%] w-8 h-8">
                                 <img src="./assets/gallery-icon-2.png" alt="android gallery icon" class="absolute top-5 left-[82%] w-8 h-8 rounded-lg">
                             </div>
@@ -102,7 +103,7 @@
                             </div>
                         </section>
                         <!-- Gallery container tablet -->
-                        <section class="md:flex md:flex-col md:gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[95%] py-4 md:max-w-[100%] md:min-h-[390px] hidden md:block md:order-2">
+                        <section class="md:flex md:flex-col md:gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[95%] py-4 md:max-w-[100%] md:min-h-[390px] hidden md:block md:order-2 lg:max-w-[100%]">
                             <div class="relative w-full flex justify-center items-center">
                                 <img src="./assets/gallery-image-2.png" alt="gallery image 1" class="rounded-2xl w-full max-w-[90%] h-auto md:min-h-[311px]">
                                 <img src="./assets/gallery-icon-1.png" alt="book gallery icon" class="absolute top-5 left-[70%] w-8 h-8">
@@ -117,10 +118,43 @@
                                     <span class="text-white text-sm">+99</span>
                                 </div>
                             </div>
-                        </section>    
-
+                        </section>
+                        <!-- Gallery container desktop  1-->
+                        <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[95%] py-4 md:max-w-[100%] hidden lg:block lg:order-3 lg:max-w-[100%] lg:min-h-[426px] lg:flex lg:flex-col lg:justify-center">
+                            <div class="relative w-full flex justify-center items-center">
+                                <img src="./assets/gallery-image-6.png" alt="gallery image 3" class="rounded-2xl w-full max-w-[90%] h-auto md:min-h-[311px]">
+                                <img src="./assets/gallery-icon-1.png" alt="book gallery icon" class="absolute top-5 left-[70%] w-8 h-8">
+                                <img src="./assets/gallery-icon-2.png" alt="android gallery icon" class="absolute top-5 left-[82%] w-8 h-8 rounded-lg">
+                            </div>
+                            <div class="flex justify-between px-4 py-2">
+                                <div>
+                                    <h2 class="font-medium text-lg">Gojek</h2>
+                                    <p class="font-normal text-sm">Home Screen gojek apps</p>
+                                </div>
+                                <div class="bg-black rounded-3xl flex justify-center items-center min-w-[50px] max-w-[50px]">
+                                    <span class="text-white text-sm">+99</span>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Gallery container desktop 2 -->
+                        <section class="md:flex md:flex-col md:gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[95%] py-4 md:max-w-[100%] md:min-h-[390px] hidden md:hidden lg:block lg:order-4 lg:max-w-[100%] lg:min-h-[426px] lg:flex lg:flex-col lg:justify-center">
+                            <div class="relative w-full flex justify-center items-center">
+                                <img src="./assets/gallery-image-5.png" alt="gallery image 4" class="rounded-2xl w-full max-w-[90%] h-auto md:min-h-[311px]">
+                                <img src="./assets/gallery-icon-1.png" alt="book gallery icon" class="absolute top-5 left-[70%] w-8 h-8">
+                                <img src="./assets/gallery-icon-2.png" alt="android gallery icon" class="absolute top-5 left-[82%] w-8 h-8 rounded-lg">
+                            </div>
+                            <div class="flex justify-between px-4 py-2">
+                                <div>
+                                    <h2 class="font-medium text-lg">Bookies</h2>
+                                    <p class="font-normal text-sm">Read digital book app</p>
+                                </div>
+                                <div class="bg-black rounded-3xl flex justify-center items-center min-w-[50px] max-w-[50px]">
+                                    <span class="text-white text-sm">+99</span>
+                                </div>
+                            </div>
+                        </section>
                         <!-- Gallery container 2 mobile-->
-                        <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl w-full max-w-[95%] md:max-w-[100%] md:min-h-[390px] py-4 md:order-1 order-3">
+                        <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl w-full max-w-[95%] md:max-w-[100%] md:min-h-[390px] py-4 md:order-1 order-3 lg:max-w-[100%]">
                             <div class="relative w-full flex justify-center">
                                 <img src="./assets/gallery-image-3.png" alt="gallery image 2" class="rounded-2xl w-full max-w-[90%] h-auto md:min-h-[311px]">
                                 <img src="./assets/gallery-icon-3.png" alt="book gallery icon" class="absolute top-5 left-[70%] w-8 h-8">
@@ -138,16 +172,16 @@
                         </section>
 
                         <!-- Gallery container 3 mobile-->
-                        <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[95%] py-4 md:max-w-[100%] md:order-4 order-4 md:min-h[427px] md:min-h-[390px]">
+                        <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[95%] py-4 md:max-w-[100%] md:order-4 order-4 md:min-h[427px] md:min-h-[390px] lg:order-6 lg:max-w-[100%]">
                             <div class="relative w-full flex justify-center items-center">
-                                <img src="./assets/gallery-image-4.png" alt="gallery image 1" class="rounded-2xl w-full max-w-[90%] h-auto md:min-h-[] md:max-w-[90%]">
+                                <img src="./assets/gallery-image-4.png" alt="gallery image 1" class="rounded-2xl w-full max-w-[90%] h-auto md:min-h-[311px] md:max-w-[90%] lg:min-h-[311px]">
                                 <img src="./assets/gallery-icon-1.png" alt="book gallery icon" class="absolute top-5 left-[70%] w-8 h-8">
                                 <img src="./assets/gallery-icon-2.png" alt="android gallery icon" class="absolute top-5 left-[82%] w-8 h-8 rounded-lg">
                             </div>
                             <div class="flex justify-between px-4 py-2">
                                 <div>
-                                    <h2 class="font-medium text-lg">BWalet</h2>
-                                    <p class="font-normal text-sm">Business wallet</p>
+                                    <h2 class="font-medium text-lg">Gojek</h2>
+                                    <p class="font-normal text-sm">Home Screen gojek apps</p>
                                 </div>
                                 <div class="bg-black rounded-3xl flex justify-center items-center min-w-[50px] max-w-[50px]">
                                     <span class="text-white text-sm">+99</span>
