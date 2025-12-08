@@ -11,16 +11,123 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
 </head>
-<body class="font-[Poppins]  font-light text-[var(--text)]">
+<body class="font-[Poppins] font-light text-[var(--text)]">
+
     <!-- santiago suarez part -->
-    <header>
-        <nav>
+    <div class="min-h-[1800px] relative">
+        <div class="absolute">
+            <div>
+                <header>
+                    <nav class="flex justify-between p-4 min-w-[390px]">
+                        <div class="flex items-center gap-2">
+                            <img src="./assets/Frame 8.png" alt="profile image" class="w-8">
+                            <p class="font-semibold">It's me</p>
+                        </div>
+                        <div class="flex gap-6 mr-4">
+                            <button class="border-2 rounded-3xl border-[var(--brand)] min-w-[143px] min-h-[38px]">
+                                <p class="text-sm font-normal">Download CV</p>
+                            </button>
+                            <button>
+                                <span class="text-lg">☰</span>
+                            </button>
+                        </div>
+                    </nav>
+                </header>
 
-        </nav>
-    </header>
-    <section>
+                <div class="flex-col min-h-[450px]">
+                    <section class="flex p-5 max-h-[200px]">
+                        <div>
+                            <h1 class="font-light text-[33.6px] max-w-[200px]">Let's learn to code</h1>
+                            <h1 class="font-light text-[33.6px]">an application</h1>
+                            <img src="./assets/subtask-icon.png" alt="subtask icon" class="max-w-[36px] h-[36px] relative bottom-[90%] left-[70%]">
+                            <img src="./assets/book-open-light-icon.png" alt="Book open icon" class="max-w-[36px] max-h-[36px] relative bottom-[80%] left-[55%] ">
+                        </div>
+                    </section>
 
-    </section>
+                    <section class="flex-col p-5">
+                        <p class="max-w-[350px]">with me <span class="text-[var(--brand)]">arif iskandar</span>, a software</p>
+                        <p class="max-w-[350px]">developer who loves to share how to code in many programing
+                        languages and multi platforms.</p>
+                    </section>
+
+                    <div class="flex p-5 items-center gap-4">
+                        <button class="bg-[var(--brand)] text-white rounded-3xl min-w-[121px] min-h-[38px]">Start learn</button>
+                        <img src="./assets/github-icon.png" alt="github icon" class="max-w-[24px] max-h-[24px]">
+                        <img src="./assets/instagram-icon.png" alt="Instagram icon" class="max-w-[24px] max-h-[24px]">
+                        <img src="./assets/tiktok-icon.png" alt="tiktok icon" class="max-w-[24px] max-h-[24px]">
+                        <img src="./assets/youtube-icon.png" alt="youtube icon" class="max-w-[24px] max-h-[24px]">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-6 p-4 w-full">
+
+                <!-- Gallery container 1 -->
+                <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl max-w-[95%] py-4">
+                    <div class="relative w-full flex justify-center items-center">
+                        <img src="./assets/gallery-image-1.png" alt="gallery image 1" class="rounded-2xl w-full max-w-[90%] h-auto">
+                        <img src="./assets/gallery-icon-1.png" alt="book gallery icon" class="absolute top-5 left-[70%] w-8 h-8">
+                        <img src="./assets/gallery-icon-2.png" alt="android gallery icon" class="absolute top-5 left-[82%] w-8 h-8 rounded-lg">
+                    </div>
+                    <div class="flex justify-between px-4 py-2">
+                        <div>
+                            <h2 class="font-medium text-lg">BWalet</h2>
+                            <p class="font-normal text-sm">Business wallet</p>
+                        </div>
+                        <div class="bg-black rounded-3xl flex justify-center items-center min-w-[50px] max-w-[50px]">
+                            <span class="text-white text-sm">+99</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gallery container 2 -->
+                <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl w-full max-w-[95%] py-4">
+                    <div class="relative w-full flex justify-center">
+                        <img src="./assets/gallery-image-3.png" alt="gallery image 2" class="rounded-2xl w-full max-w-[90%] h-auto">
+                        <img src="./assets/gallery-icon-3.png" alt="book gallery icon" class="absolute top-5 left-[70%] w-8 h-8">
+                        <img src="./assets/gallery-icon-4.png" alt="android gallery icon" class="absolute top-5 left-[82%] w-8 h-8 rounded-lg">
+                    </div>
+                    <div class="flex justify-between px-4 py-2">
+                        <div>
+                            <h2 class="font-medium text-lg">Bookies</h2>
+                            <p class="font-normal text-sm">Read digital book app</p>
+                        </div>
+                        <div class="bg-black rounded-3xl flex justify-center items-center min-w-[50px] max-w-[50px]">
+                            <span class="text-white text-sm">+99</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Gallery container 3 -->
+                <section class="flex flex-col gap-4 border-2 border-dashed border-[#E5E5E5] rounded-2xl w-full max-w-[95%] py-4">
+                    <div class="relative w-full flex justify-center">
+                        <img src="./assets/gallery-image-4.png" alt="gallery image 3" class="rounded-2xl w-full max-w-[90%] h-auto">
+                        <img src="./assets/gallery-icon-3.png" alt="book gallery icon" class="absolute top-5 left-[70%] w-8 h-8">
+                        <img src="./assets/gallery-icon-2.png" alt="android gallery icon" class="absolute top-5 left-[82%] w-8 h-8 rounded-lg">
+                    </div>
+                    <div class="flex justify-between px-4 py-2">
+                        <div>
+                            <h2 class="font-medium text-lg">Gojek</h2>
+                            <p class="font-normal text-sm">Home screen gojek apps</p>
+                        </div>
+                        <div class="bg-black rounded-3xl flex justify-center items-center min-w-[50px] max-w-[50px]">
+                            <span class="text-white text-sm">+99</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Load More Button -->
+                <div class="flex justify-center mt-4">
+                    <button class="border-2 border-[var(--brand)] rounded-3xl px-4 py-2">Load more</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="overflow-hidden">
+            <img src="./assets/circle-bg-type-2.png" alt="bg-circles" class="relative bottom-[60%] left-[30%] min-w-[547px] min-h-auto">
+        </div>
+    </div>
     
     <!-- santiago minotta part -->
     <section class="py-9 px-4 flex flex-col gap-24 
