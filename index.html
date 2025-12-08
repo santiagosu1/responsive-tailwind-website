@@ -13,6 +13,10 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 
 <body class="font-[Poppins] font-light text-[var(--text)]">
@@ -155,7 +159,7 @@
     <section class="py-9 px-4 flex flex-col gap-24 mt-[800px] relative
     md:px-12 md:relative
     lg:p-24 lg:relative">
-        <img class="absolute -z-10 -right-72 -top-64 md:-right-80 md:top-0 lg:-left-80 min-w-fit" src="./assets/circle-bg-type-2.png" alt="">
+        <img class="absolute -z-10 -right-72 -top-64 md:-right-80 md:top-0 lg:-left-80 min-w-fit animate__animated animate__heartBeat animate__infinite" style="animation-duration: 5s;" src="./assets/circle-bg-type-2.png" alt="">
         <div class="flex flex-col
         md:w-4/5
         lg:w-full lg:flex-row">
@@ -165,7 +169,9 @@
                 <h2 class="text-4xl md:text-7xl lg:text-6xl">It's me<br>Arif Iskandar</h2>
                 <img src="./assets/profile-image.webp" alt="A person smiling at the camera" class="max-w-[56px] h-[56px] 
                 md:absolute md:left-64 md:top-3
-                lg:left-52 lg:top-1">
+                lg:left-52 lg:top-1 
+                animate__animated animate__rotateIn animate__infinite"
+                style="animation-duration: 6s;"> 
             </div>
 
             <div class="flex flex-col gap-5
@@ -290,7 +296,8 @@
         md:py-8 md:px-24
         lg:py-8 lg:px-24">
             <h3 class="text-2xl text-center">So, what are you waiting for?</h3>
-            <a class="text-white py-2 px-6 bg-[var(--brand)] rounded-3xl" href="#">Let's start</a>
+            <a class="text-white py-2 px-6 bg-[var(--brand)] rounded-3xl
+            animate__animated animate__pulse animate__infinite" href="#">Let's start</a>
         </div>
     </section>
 </body>
