@@ -1,4 +1,27 @@
 :root {
     --text: #393F48;
     --brand: #EF5DA8;
+    --brand-dark: #ff44a4;
+}
+
+@keyframes floatSubtask {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes floatBook {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-5px) rotate(-2deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+  75% { transform: translateY(-5px) rotate(-1deg); }
+}
+@keyframes typewriter-loop {
+  0%, 10% { width: 0; }
+  40%, 60% { width: 100%; }
+  90%, 100% { width: 0; }
+}
+
+.animate-typewriter-loop {
+  display: inline-block;
+  animation: typewriter-loop 4s steps(8) infinite;
 }

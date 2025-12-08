@@ -32,7 +32,8 @@
                         <div class="flex items-center gap-16">
                             <div class="flex items-center gap-2">
                                 <img src="./assets/Frame 8.png" alt="profile image" class="w-8">
-                                <p class="font-semibold min-w-[100%]">It's me</p>
+                                <p class="font-semibold text-[var(--text)]">
+                                <span class="hidden md:inline-block whitespace-nowrap overflow-hidden border-r-2 border-[var(--brand)] animate-typewriter-loop md:max-w-[150px]">It's me</span></p>
                             </div>
                             <!-- ONLY DISAPPERS IN MOBILE -->
                             <div class=" hidden md:block flex items-center justify-end">
@@ -98,31 +99,45 @@
                     <div class="flex-col min-h-[450px] p-5 md:px-15 relative lg:flex lg:items-center lg:justify-between lg:flex-row lg:items-end">
                         <section class="flex max-h-[200px] md:max-h-[360px]">
                             <div>
-                                <h1 class="font-light text-[33.6px] max-w-[200px] md:text-[72px] md:max-w-[400px]">Let's learn to code</h1>
+                                <h1 class="font-light text-[33.6px] max-w-[200px] md:text-[72px] md:max-w-[400px]">
+                                    Let's learn to code
+                                </h1>
                                 <h1 class="font-light text-[33.6px] md:text-[72px]">an application</h1>
-                                <img src="./assets/subtask-icon.png" alt="subtask icon" class="max-w-[36px] md:min-w-[56px] md:min-h-[56px] h-[36px] relative bottom-[70%] left-[70%] md:bottom-[51%] md:left-[56%]">
-                                <img src="./assets/book-open-light-icon.png" alt="Book open icon" class="max-w-[36px] max-h-[36px] md:min-w-[56px] md:min-h-[56px] relative bottom-[65%] left-[55%] md:bottom-[95%] md:left-[70%]">
+
+                                <!-- Subtask icon flotando con transición -->
+                                <img src="./assets/subtask-icon.png" alt="subtask icon"
+                                    class="max-w-[36px] md:min-w-[56px] md:min-h-[56px] h-[36px] relative bottom-[70%] left-[70%] md:bottom-[51%] md:left-[56%] animate-[floatSubtask_3s_ease-in-out_infinite] transition-transform duration-700 ease-in-out">
+
+                                <!-- Book icon flotando con animación distinta -->
+                                <img src="./assets/book-open-light-icon.png" alt="Book open icon"
+                                    class="max-w-[36px] max-h-[36px] md:min-w-[56px] md:min-h-[56px] relative bottom-[65%] left-[55%] md:bottom-[95%] md:left-[70%] animate-[floatBook_4s_ease-in-out_infinite] transition-transform duration-1000 ease-linear">
                             </div>
                         </section>
 
                         <section class="flex-col mr-10 lg:mb-19">
-                            <p class="max-w-[350px] md:hidden">with me <span class="text-[var(--brand)]">arif iskandar</span>, a software</p>
-                            <p class="max-w-[350px] md:hidden">developer who loves to share how to code in many programing
-                            languages and multi platforms.</p>
-                            <p class="max-w-[350px] hidden md:block">with me <span class="text-[var(--brand)]">arif iskandar</span>, a software developer who loves to share how to code in many programing
-                            languages and multi platforms.</p>
+                            <p class="max-w-[350px] md:hidden">
+                                with me <span class="text-[var(--brand)]">arif iskandar</span>, a software
+                            </p>
+                            <p class="max-w-[350px] md:hidden">
+                                developer who loves to share how to code in many programming languages and multi platforms.
+                            </p>
+                            <p class="max-w-[350px] hidden md:block">
+                                with me <span class="text-[var(--brand)]">arif iskandar</span>, a software developer who loves to share how to code in many programming languages and multi platforms.
+                            </p>
 
                             <div class="flex items-center gap-4 mt-[30px] md:flex md:flex-col md:items-start">
-                                <button class="bg-[var(--brand)] text-white rounded-3xl min-w-[121px] min-h-[38px] md:absolute">Start learn</button>
+                                <button 
+                                    class="bg-[var(--brand)] text-white rounded-3xl min-w-[121px] min-h-[38px] hover:-translate-y-2 hover:bg-[color:var(--brand-dark)] transition-all duration-300 ease-in-out">Start learn</button>
                                 <div class="flex md:flex gap-4 md:flex-col absolute md:left-[90%] md:top-[70%] md:gap-8 left-[40%] bottom-[16%] lg:hidden">
                                     <img src="./assets/github-icon.png" alt="github icon" class="max-w-[24px] max-h-[24px]">
                                     <img src="./assets/instagram-icon.png" alt="Instagram icon" class="max-w-[24px] max-h-[24px]">
                                     <img src="./assets/tiktok-icon.png" alt="tiktok icon" class="max-w-[24px] max-h-[24px]">
-                                    <img src="./assets/youtube-icon.png" alt="youtube icon" class="max-w-[24px] max-h-[24px]">                           
-                                </div>      
+                                    <img src="./assets/youtube-icon.png" alt="youtube icon" class="max-w-[24px] max-h-[24px]">
+                                </div>
                             </div>
                         </section>
                     </div>
+
                     <!-- Gallery -->
                     <div class="flex flex-col items-center gap-6 p-4 w-full md:mt-[100px] md:grid md:grid-cols-2 md:items-center md:px-12 lg:grid lg:grid-cols-3 lg:mt-[0px] lg:p-14">
 
@@ -286,91 +301,91 @@
                                     for their exams.</p>
                             </div>
                         </div>
-
-        <!-- comments section -->
-        <div class="flex flex-row gap-8 relative">
-            <!-- Overlay -->
-            <div
-                class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-white to-white/0 pointer-events-none">
-            </div>
-            <!-- DESKTOP COMMENTS -->
-            <div class="hidden xl:flex flex-col flex-1 gap-8 ">
-                <!-- Comment #5 -->
-                <div class="border border-[#E5E5E5] rounded-3xl w-full p-6 flex flex-col gap-6">
-                    <div class="flex flex-row gap-4">
-                        <img src="./assets/profile-5.png" alt="" class="w-[56px] h-[56px]">
-                        <div class="flex flex-col flex-1 min-w-0 justify-center">
-                            <h3>Marilyn Siphron</h3>
-                            <h4 class="truncate text-sm text-[var(--brand)]">Remix and React Training</h4>
-                        </div>
-                    </div>
-                    <p class="text-sm">Tellus mauris adipiscing dignissim sodales. Id dui venenatis mollis faucibus.</p>
-                </div>
-
-                <!-- Comment #6 -->
-                <div>
-                    <div class="border border-[#E5E5E5] rounded-3xl w-full p-6 flex flex-col gap-6">
-                        <div class="flex flex-row gap-4">
-                            <img src="./assets/profile-6.png" alt="" class="w-[56px] h-[56px]">
-                            <div class="flex flex-col flex-1 min-w-0 justify-center">
-                                <h3>Marilyn Siphron</h3>
-                                <h4 class="truncate text-sm text-[var(--brand)]">Remix and React Training</h4>
+                        
+                        <!-- comments section -->
+                        <div class="flex flex-row gap-8 relative">
+                            <!-- Overlay -->
+                            <div
+                                class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-white to-white/0 pointer-events-none">
                             </div>
-                        </div>
-                        <p class="text-sm">Libero in egestas pellentesque purus, nullam. Consectetur commodo odio
-                            interdum neque ullamcorper sit.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- MOBILE COMMENTS -->
-            <div class="flex flex-col flex-1 gap-8">
-                <!-- Comment #1 -->
-                <div class="border border-[#E5E5E5] rounded-3xl w-full p-6 flex flex-col gap-6">
-                    <div class="flex flex-row gap-4">
-                        <img src="./assets/profile-1.png" alt="" class="w-[56px] h-[56px]">
-                        <div class="flex flex-col flex-1 min-w-0 justify-center">
-                            <h3>Adison Westervelt</h3>
-                            <h4 class="truncate text-sm text-[var(--brand)]">Senior Proogram Manager at Microsoft</h4>
-                        </div>
-                    </div>
-                    <p class="text-sm">Hendrerit diam a, morbi tristique egestas commodo ullamcorper ut. Aenean ipsum
-                        tempus, felis nibh
-                        amet mollis id sem sit. Venenatis aliquam tellus viverra nullam. Consequat cras ac donec nunc.
-                    </p>
-                </div>
+                            <!-- DESKTOP COMMENTS -->
+                            <div class="hidden xl:flex flex-col flex-1 gap-8 ">
+                                <!-- Comment #5 -->
+                                <div class="border border-[#E5E5E5] rounded-3xl w-full p-6 flex flex-col gap-6">
+                                    <div class="flex flex-row gap-4">
+                                        <img src="./assets/profile-5.png" alt="" class="w-[56px] h-[56px]">
+                                        <div class="flex flex-col flex-1 min-w-0 justify-center">
+                                            <h3>Marilyn Siphron</h3>
+                                            <h4 class="truncate text-sm text-[var(--brand)]">Remix and React Training</h4>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm">Tellus mauris adipiscing dignissim sodales. Id dui venenatis mollis faucibus.</p>
+                                </div>
 
-                <!-- Comment #2 -->
-                <div>
-                    <div class="border border-[#E5E5E5] rounded-3xl w-full p-6 flex flex-col gap-6">
-                        <div class="flex flex-row gap-4">
-                            <img src="./assets/profile-2.png" alt="" class="w-[56px] h-[56px]">
-                            <div class="flex flex-col flex-1 min-w-0 justify-center">
-                                <h3>Adison Westervelt</h3>
-                                <h4 class="truncate text-sm text-[var(--brand)]">Senior Program Manager at Microsoft
-                                </h4>
+                                <!-- Comment #6 -->
+                                <div>
+                                    <div class="border border-[#E5E5E5] rounded-3xl w-full p-6 flex flex-col gap-6">
+                                        <div class="flex flex-row gap-4">
+                                            <img src="./assets/profile-6.png" alt="" class="w-[56px] h-[56px]">
+                                            <div class="flex flex-col flex-1 min-w-0 justify-center">
+                                                <h3>Marilyn Siphron</h3>
+                                                <h4 class="truncate text-sm text-[var(--brand)]">Remix and React Training</h4>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm">Libero in egestas pellentesque purus, nullam. Consectetur commodo odio
+                                            interdum neque ullamcorper sit.</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <p class="text-sm">Orci penatibus luctus felis in aliquam adipiscing. Vulputate condimentum
-                            ullamcorper
-                            pellentesque dictumst fusce.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- TABLET COMMENTS -->
-            <div class="hidden md:flex xl:flex flex-col flex-1 gap-8 ">
-                <!-- Comment #3 -->
-                <div class="border border-[#E5E5E5] rounded-3xl w-full p-6 flex flex-col gap-6">
-                    <div class="flex flex-row gap-4">
-                        <img src="./assets/profile-3.png" alt="" class="w-[56px] h-[56px]">
-                        <div class="flex flex-col flex-1 min-w-0 justify-center">
-                            <h3>Marley Siphron</h3>
-                            <h4 class="truncate text-sm text-[var(--brand)]">Jobs</h4>
-                        </div>
-                    </div>
-                    <p class="text-sm">Habitant ut augue eu accumsan tellus ultrices integer. Gravida elementum egestas
-                        tellus condimentum bibendum suspendisse ut. Blandit.
-                    </p>
-                </div>
+                            <!-- MOBILE COMMENTS -->
+                            <div class="flex flex-col flex-1 gap-8">
+                                <!-- Comment #1 -->
+                                <div class="border border-[#E5E5E5] rounded-3xl w-full p-6 flex flex-col gap-6">
+                                    <div class="flex flex-row gap-4">
+                                        <img src="./assets/profile-1.png" alt="" class="w-[56px] h-[56px]">
+                                        <div class="flex flex-col flex-1 min-w-0 justify-center">
+                                            <h3>Adison Westervelt</h3>
+                                            <h4 class="truncate text-sm text-[var(--brand)]">Senior Proogram Manager at Microsoft</h4>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm">Hendrerit diam a, morbi tristique egestas commodo ullamcorper ut. Aenean ipsum
+                                        tempus, felis nibh
+                                        amet mollis id sem sit. Venenatis aliquam tellus viverra nullam. Consequat cras ac donec nunc.
+                                    </p>
+                                </div>
+
+                                <!-- Comment #2 -->
+                                <div>
+                                    <div class="border border-[#E5E5E5] rounded-3xl w-full p-6 flex flex-col gap-6">
+                                        <div class="flex flex-row gap-4">
+                                            <img src="./assets/profile-2.png" alt="" class="w-[56px] h-[56px]">
+                                            <div class="flex flex-col flex-1 min-w-0 justify-center">
+                                                <h3>Adison Westervelt</h3>
+                                                <h4 class="truncate text-sm text-[var(--brand)]">Senior Program Manager at Microsoft
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm">Orci penatibus luctus felis in aliquam adipiscing. Vulputate condimentum
+                                            ullamcorper
+                                            pellentesque dictumst fusce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TABLET COMMENTS -->
+                            <div class="hidden md:flex xl:flex flex-col flex-1 gap-8 ">
+                                <!-- Comment #3 -->
+                                <div class="border border-[#E5E5E5] rounded-3xl w-full p-6 flex flex-col gap-6">
+                                    <div class="flex flex-row gap-4">
+                                        <img src="./assets/profile-3.png" alt="" class="w-[56px] h-[56px]">
+                                        <div class="flex flex-col flex-1 min-w-0 justify-center">
+                                            <h3>Marley Siphron</h3>
+                                            <h4 class="truncate text-sm text-[var(--brand)]">Jobs</h4>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm">Habitant ut augue eu accumsan tellus ultrices integer. Gravida elementum egestas
+                                        tellus condimentum bibendum suspendisse ut. Blandit.
+                                    </p>
+                                </div>
 
                                 <!-- Comment #4 -->
                                 <div>
@@ -402,7 +417,7 @@
             </div>
         </div>
         <div class="overflow-hidden">
-            <img src="./assets/circle-bg-type-2.png" alt="bg-circles" class="relative bottom-[60%] left-[30%] min-w-[547px] min-h-auto md:left-[58%] lg:left-[78%]">
+            <img src="./assets/circle-bg-type-2.png" alt="bg-circles" class="absolute -z-10 -right-80 top-0 min-w-fit animate__animated animate__heartBeat animate__infinite" style="animation-duration: 5s;">
         </div>
     </div>
 
